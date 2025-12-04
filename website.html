@@ -22,12 +22,12 @@
         display: inline-flex;
         padding-left: 180px;
         padding-top: 20px;
-    }
+    } */
 
-    li {
+  li {
         padding: 15px;
         font-size: 25px;
-    }
+    } 
 
     .hero {
 
@@ -350,6 +350,7 @@ p {
 .footer-overlay {
     background: rgba(0, 60, 120, 0.8);
     padding-top: 40px;
+    
 }
 .footer-top {
     text-align: center;
@@ -388,14 +389,14 @@ p {
     padding-left: 10px;
     margin-bottom: 15px;
 }
-.footer-column ul {
+/* .footer-column ul {
     padding: 0;
     list-style: none;
-}
+} */
 
-.footer-column ul li {
+/* .footer-column ul li {
     margin-bottom: 8px;
-}
+} */
 .post {
     display: flex;
     align-items: flex-start;
@@ -418,15 +419,27 @@ p {
     font-size: 14px;
 }
     .footer-main {
-        flex-direction: column;
-        padding: 30px;
+  padding: 30px;
     }
 
     .footer-column {
-        width: 100%;
+        width:22%;
         margin-bottom: 25px;
+        margin: 5px;
+      
     }
+.footer_ul{
+padding: 5px;
+    font-size: 18px;
+
 }
+.ft-li{
+    padding: 2px;
+}
+.ft{
+    color: white;
+}
+
 </style>
 
 <body>
@@ -794,20 +807,20 @@ p {
 
             <div class="footer-column">
                 <h3>UNIONCORP.</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <p class="ft">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
             </div>
 
             <div class="footer-column">
                 <h3>Services</h3>
-                <ul>
-                    <li>Financial Planning</li>
-                    <li>Investments Management</li>
-                    <li>Business Loan</li>
-                    <li>Taxes Consulting</li>
-                    <li>Insurance Consulting</li>
-                    <li>Retirement Planning</li>
-                    <li>Risk Management</li>
-                    <li>Technology Consulting</li>
+                <ul class="footer_ul" style="list-style-type: none;">
+                    <li class="ft-li">Financial Planning</li>
+                    <li class="ft-li">Investments Management</li>
+                    <li class="ft-li">Business Loan</li>
+                    <li class="ft-li">Taxes Consulting</li>
+                    <li class="ft-li">Insurance Consulting</li>
+                    <li class="ft-li">Retirement Planning</li>
+                    <li class="ft-li">Risk Management</li>
+                    <li class="ft-li">Technology Consulting</li>
                 </ul>
             </div>
 
@@ -815,13 +828,13 @@ p {
                 <h3>Recent Posts</h3>
 
                 <div class="post">
-                    <p>Incorporation is a big milestone for business <br>
-                        <span>Jan 27, 2021 • Admin</span>
+                    <p class="ft">Incorporation is a big milestone for business <br>
+                        <span >Jan 27, 2021 • Admin</span>
                     </p>
                 </div>
 
                 <div class="post">
-                    <p>Incorporation is a big milestone for business <br>
+                    <p class="ft">Incorporation is a big milestone for business <br>
                         <span>Jan 27, 2021 • Admin</span>
                     </p>
                 </div>
@@ -829,15 +842,15 @@ p {
 
             <div class="footer-column">
                 <h3>Have a Questions?</h3>
-                <p>📍 203 Fake St. Mountain View, San Francisco, California, USA</p>
-                <p>📞 +2 392 3929 210</p>
-                <p>📧 info@yourdomain.com</p>
+                <p class="ft">📍 203 Fake St. Mountain View, San Francisco, California, USA</p>
+                <p class="ft">📞 +2 392 3929 210</p>
+                <p class="ft">📧 info@yourdomain.com</p>
             </div>
 
         </div>
 
         <div class="footer-bottom">
-            <p>Copyright ©2025 All rights reserved | This template is made with by Colorlib</p>
+            <p class="ft">Copyright ©2025 All rights reserved | This template is made with by Colorlib</p>
         </div>
 
     </div>
@@ -845,7 +858,7 @@ p {
         
                 
             
-    </div>
+    </div>     
     
 </body>
 
