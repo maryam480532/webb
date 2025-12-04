@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #header {
+        background-color: white;
+        width: 100%;
+        height: 90px;
+        display: inline-flex;
+ }
+
+    .logo {
+        width: 30%;
+    }
+
+    ul {
+        display: inline-flex;
+        padding-left: 180px;
+        padding-top: 20px;
+    }
+
+    li {
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .hero {
+
+        background: linear-gradient(rgba(150, 146, 146, 0), rgba(45, 13, 13, 0.501))
+        , url(img/gallery-1.jpg.webp);
+        width: 100%;
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-text {
+        padding: 150px 100px 20px 100px;
+    }
+
+    .hero-h3 {
+        font-size: 50px;
+        color: rgb(232, 232, 236);
+        text-shadow: 5px 5px 6px rgb(49, 48, 48);
+
+    }
+
+    .hero-para {
+        font-size: 30px;
+    }
+
+    .hero-btn {
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: blue;
+        border: none;
+        box-shadow: 5px 0 9px blue, 0 5px 9px red;
+    }
+    .about {
+        background-color: rgba(195, 194, 194, 0.534);
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+        padding-top: 100px;
+    }
+    .about1{
+        width: 50%;
+        height: auto;
+    }
+    
+    .about2 {
+        padding: 10px;
+        width: 50%;
+        padding-top: 80px;
+        line-height: 30px;
+    }
+
+    .abt1,
+    .abt2 {
+        display: inline-flex;
+        height: auto;
+        width: 100%;
+    }
+
+    .about1_abt1,
+    .about1_abt2 {
+        background-color: white;
+        width: 50%;
+        height: 250px;
+        margin: 7px;
+        border-radius: 30px;
+        padding: 20px;
+    }
+
+    .abt-icon {
+        background-color: rgb(30, 107, 175);
+        border-radius: 100px;
+        padding: 6px;
+    }
+
+    .abt22 {
+        background-color: rgba(14, 148, 196, 0.826);
+
+        color: white;
+    }
+ .Container {
+  display: flex;
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  background-color:rgb(235, 226, 226);
+}
+
+.Hero-image {
+  width: 50%;
+}
+
+.Text-section {
+  padding: 30px;
+  width: 50%;
+}
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.watch-video-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.play-icon {
+  margin-right: 8px;
+}
+
+.watch-video-btn:hover {
+  background-color: #0056b3;
+}
+   
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.services-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.service-subtitle {
+    letter-spacing: 2px;
+    color: #888;
+    font-weight: bold;
+}
+
+.service-title {
+    font-size: 32px;
+    margin: 10px 0 40px;
+    color: #333;
+    font-weight: 700;
+}
+
+.services-container {
+    display: inline flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-box {
+    width: 22%;
+    background: #fff;
+    padding: 25px 15px;
+    border-radius: 8px;
+}
+.icon {
+    height: 60px;
+    width: 60px;
+    background: #e6f0ff;
+    border-radius: 8px;
+    margin: 0 auto 15px;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.service-box p {
+    color: #777;
+    font-size: 14px;
+}
+.image-row{
+    display:flex;
+    gap:6px;
+  }
+  .image-row img{
+    width:100%;
+    height:180px;
+  }
+
+  .stats-section{
+    background:#2ea3d6;
+    text-align:center;
+    padding:50px 20px;
+    color:#fff;
+  }
+  .stats-section h3{
+    
+    font-size:12px;
+    letter-spacing:2px;
+    margin:0;
+  }
+  .stats-section h2{
+    font-size:30px;
+    margin:10px 0 30px 0;
+    font-weight:800;
+  }
+
+  .stats-row{
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
+  }
+  .stat-box{
+    padding:15px 10px;
+  }
+  .stat-number{
+    font-size:32px;
+    font-weight:800;
+    margin-bottom:6px;
+  }
+  .stat-label{
+    font-size:12px;
+  }
+  .image-row1{
+    display:flex;
+    gap:6px;
+  }
+  .image-row2{
+    width:100%;
+    height:180px;
+  }
+  .leadership-team {
+    text-align: center;
+    padding: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.member {
+    margin: 20px;
+    width: 200px;
+}
+
+.member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+   
+}
+.testimonials {
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-container {
+  display: flex;
+}
+
+.testimonial {
+  width: 30%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.testimonial.highlighted {
+  background-color: #007bff;
+  color: white;
+}
+
+.testimonial img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.name {
+  font-weight: bold;
+}
+
+.position {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.testimonial.highlighted .position {
+  color: #ccc;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
+.footer-section {
+    background: url("img/gallery-1.jpg.webp") no-repeat center center/cover;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+.footer-overlay {
+    background: rgba(0, 60, 120, 0.8);
+    padding-top: 40px;
+}
+.footer-top {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.footer-top h4 {
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+.footer-top h2 {
+    font-size: 28px;
+    margin: 10px 0 20px;
+}
+
+.btn-started {
+    background: #fff;
+    color: #7ab3df;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.footer-main {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+}
+
+.footer-column {
+    width: 23%;
+    min-width: 220px;
+}
+.footer-column h3 {
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+.footer-column ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+.post {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.post img {
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.post span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+.footer-bottom {
+    background: rgba(107, 156, 206, 0.8);
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+    .footer-main {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}
+</style>
+
+<body>
+    <div id="header">
+        <div class="logo">
+            <img src="img/images.jfif" width="150" height="100" alt="">
+        </div>
+        <div class="menu">
+            <ul style="list-style-type: none;">
+                <a href="home.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About </li>
+                </a>
+                <a href="ser.html">
+                    <li>Services</li>
+                </a>
+
+                <a href="work.html">
+                    <li>Work</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blogs </li>
+                </a>
+                <a href="price.html">
+                    <li>Pricing</li>
+                </a>
+                <a href="cont.html">
+                    <li>Contact us</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div id="section">
+        <div class="hero hero1">
+            <center class="hero-text">
+                <h3 class="hero-h3">We're Always Here To Give Financial Help!</h3>
+                <p class="hero-para">Far far away, behind the word mountains, far from the countries Vokalia and
+                    Consonantia, there live
+                    the blind texts.
+
+                </p>
+                <button class="hero-btn">Click here</button>
+            </center>
+        </div>
+        <div class="about">
+            <div class="about1">
+                <div class="abt1">
+                    <div class="about1_abt1 ">
+                        <img src="img/consultant.png" width="50" height="50" alt="" class="abt-icon">
+
+                        <h3>Comprehensive Services</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                    <div class="about1_abt1 abt22">
+                        <img src="img/gradient-culture-logo-design-template_23-2149878685.avif" width="50" height="50" alt="" class="abt-icon">
+
+                        <h3>A Culture that Delivers</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+                <div class="abt2">
+                    <div class="about1_abt2">
+                        <img src="img/full-service-rubber-stamp-grunge-design-dust-scratches-effects-can-be-easily-removed-clean-crisp-look-color-easily-82578837.webp" width="50" height="50" alt="" class="abt-icon">
+
+                        <h3>Industry Experience</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+
+                    </div>
+                    <div class="about1_abt2">
+                        <img src="img/logo-branding-identity-corporate-vector-design_460848-10939.avif" width="50" height="50" alt="" class="abt-icon">
+
+                        <h3>Professional Consultants</h3>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="about2">
+                <h6>About Union Corporation
+                </h6>
+                <h2>More than 40M+ Trusted Our Financial & Conusultation Institution
+                </h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
+                    language ocean.
+
+                    A small river named Duden flows by their place and supplies it with the necessary regelialia. It is
+                    a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </div>
+        </div>
+       <div class="Container">
+    <div class="content-wrapper">
+      <img src="img/WhatsApp Image 2025-11-30 at 6.19.17 AM.jpeg"  class="Hero-image">
+      <div class="Text-section">
+       <h6>ABOUT UNION CORPORATION</h6>
+        <h1>Quality Makes the Belief for Customers</h1>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarkgrove right at the coast of the Semantics, a large language ocean.</p>
+        <button class="watch-video-btn">
+          <span class="play-icon">▶</span> Watch Video
+        </button>
+      </div>
+    </div>
+       </div>
+        <section class="services-section">
+            <h3 class="service-subtitle">SERVICES</h3>
+            <h2 class="service-title">Our Exclusive Services<br>We Offer For You</h2>
+
+            <div class="services-container">
+
+             <div class="service-box">
+                 <div class="icon">
+                    <img src="img/images.png" alt="" height="50px" width="100px">
+                 </div>
+                <h3>Financial Planning</h3>
+                 <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        </div>
+
+        <div class="service-box">
+            <div class="icon">
+                <img src="img/images (1).jfif" alt="" height="100px" width="100px">
+            </div>
+            <h3>Investments Management</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        </div>
+
+        <div class="service-box">
+            <div class="icon">
+                <img src="img/images (1).png" alt="" height="70px" width="100px">
+            </div>
+            <h3>Business Loan</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        </div>
+
+        <div class="service-box">
+            <div class="icon">
+                <img src="img/images (2).png" alt="" height="70px" width="100px">
+            </div>
+            <h3>Taxes Consulting</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+        </div>
+<div class="service-box">
+    <div class="icon">
+        <img src="img/images (2).jfif" alt="" height="70px" width="100px">
+    </div>
+    <h3>Insurance Consulting</h3>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+</div>
+
+<div class="service-box">
+    <div class="icon">
+        <img src="img/images (3).jfif" alt="" height="70px" width="100px">
+    </div>
+    <h3>Retirement Planning</h3>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+</div>
+
+<div class="service-box">
+    <div class="icon">
+        <img src="img/images (3).png" alt="" height="70px" width="100px">
+    </div>
+    <h3>Risk Management</h3>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+</div>
+
+<div class="service-box">
+    <div class="icon">
+        <img src="img/images (4).jfif" alt="" height="70px" width="100px">
+    </div>
+    <h3>Technology Consulting</h3>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+</div>
+    </div>
+        </section>
+    <center>CASE STUDIES</center> <br><br><br>
+    <center><h1>We Take Every Case Studies Very<br> Seariously</h1></center>
+    <div class="image-row">
+  <img src="img/gallery-1.jpg.webp" alt="" height="25%" width="100px">
+  <img src="img/gallery-3.jpg.webp" alt="">
+  <img src="img/gallery-4.jpg.webp" alt="">
+  <img src="img/authentic-small-youthful-marketing-agency_23-2150167428.avif" alt="">
+</div>
+
+<section class="stats-section">
+  <h3>GREAT REVIEWS FOR OUR SERVICES</h3>
+  <h2>Technical Statistics</h2>
+
+  <div class="stats-row">
+    <div class="stat-box">
+      <div class="stat-number">60</div>
+      <div class="stat-label">Year of Experienced</div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-number">9,200</div>
+      <div class="stat-label">Satisfied Customers</div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-number">5,800</div>
+      <div class="stat-label">Project Completed</div>
+    </div>
+
+    <div class="stat-box">
+      <div class="stat-number">100</div>
+      <div class="stat-label">Get Awards</div>
+    </div>
+  </div>
+</section>
+
+<div class="beige-strip"></div>
+<center><h6>Our Blogs</h6><br><h1>Recents From Blog</h1></center>
+ <div class="image-row">
+  <img src="img/gallery-1.jpg.webp" alt="" height="25%" width="100px">
+  <img src="img/image_7.jpg.webp" alt="">
+  <img src="img/image_3.jpg.webp" alt="">
+  <img src="img/gallery-7.jpg.webp" alt="">
+</div>
+    </div>
+    </div>
+    <div class="leadership-team">
+        <h2>Our Leadership Team</h2>
+        <div class="team-members">
+            <div class="member">
+                <img src="img/premium_photo-1661508620175-3ae20da61cda.jfif" alt="Jason Smith">
+                <h3>Jason Smith</h3>
+                <p>President & CEO</p>
+                <div class="social-links">
+                    <a href="                                                   
+                    <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="                                                     
+                    <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+                </div>
+                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+            </div>
+            <div class="member">
+                <img src="img/premium_photo-1682096592504-5bc960bea6d7.jfif" alt="Jeffrey Rockenson">
+                <h3>Jeffrey Rockenson</h3>
+                <p>Executive Vice President</p>
+                <div class="social-links">
+                    <a href="                                                   
+                    <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="                                                     
+                    <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+                </div>
+                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+            </div>
+            <div class="member">
+                <img src="img/gettyimages-2166213828-612x612.jpg" alt="Jason Smith">
+                <h3>Jason Smith</h3>
+                <p>General Manager</p>
+                <div class="social-links">
+                    <a href="                                                   
+                    <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="                                                     
+                    <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+                </div>
+                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+            </div>
+            <div class="member">
+                <img src="img/istockphoto-1464539429-612x612.jpg" alt="Jason Smith">
+                <h3>Jason Smith</h3>
+                <p>Strategic Consultant</p>
+                <div class="social-links">
+                    <a href="                                                   
+                    <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="                                                     
+                    <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+                </div>
+                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+            </div>
+            <div class="member">
+                <img src="img/a8554f2228d27565d6e732ff592bcb71.jpg" alt="">
+                <h3>Jason Smith</h3>
+                <p>President & CEO</p>
+                <div class="social-links">
+                    <a href=""
+                    <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="                                                     
+                    <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+                </div>
+                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+            </div>
+            <div class="member">
+                <img src="img/istockphoto-831902150-612x612.jpg" alt="">
+                <h3>Jeffrey Rockenson</h3>
+                <p>Executive Vice President</p>
+                <div class="social-links">
+                    <a href=""
+                    <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="                                                     
+                    <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+                </div>
+                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+            </div>
+            <div class="member">
+                <img src="img/young-handsome-man-wearing-suit_1029679-56138.avif" alt="">
+                <h3>Jason Smith</h3>
+                <p>General Manager</p>
+                <div class="social-links">
+                    <a href=""
+                    <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="                                                     
+                    <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+                </div>
+                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+            </div>
+            <div class="member">
+                <img src="img/handsome-business-man-suit_1303-11245.avif" alt="">
+                <h3>Jason Smith</h3>
+                <p>Strategic Consultant</p>
+                <div class="social-links">
+                    <a href=""
+                    <a href="#" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="                                                     
+                    <a href="#" target="_blank"><i class="icon-linkedin"></i></a>
+                </div>
+                <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+            </div>
+            
+        </div>
+ <section class="testimonials">
+    <h6>TESTIMONIALS</h6>
+  <h2>Happy Customers</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <img src="img/images (6).jfif" alt="Roger Scott">
+      <blockquote>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </blockquote>
+      <p class="name">Roger Scott</p>
+      <p class="position">Marketing Manager</p>
+    </div>
+    <div class="testimonial highlighted">
+      <img src="img/man-7796384_1280.jpg" alt="Roger Scott">
+      <blockquote>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </blockquote>
+      <p class="name">Roger Scott</p>
+      <p class="position">Marketing Manager</p>
+    </div>
+    <div class="testimonial">
+      <img src="img/An-Indian-boy-375075-pixahive-681x1024.jpg" alt="Roger Scott">
+      <blockquote>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </blockquote>
+      <p class="name">Roger Scott</p>
+      <p class="position">Marketing Manager</p>
+    </div>
+  </div>
+</section>      
+    <br><br><br><br><br>
+<footer class="footer-section">
+
+    <div class="footer-overlay">
+        <div class="footer-top">
+            <h4>PREPARE FOR TAKEOFF</h4>
+            <h2>Looking for business opportunity?</h2>
+            <a href="#" class="btn-started">GET STARTED</a>
+        </div>
+
+        <div class="footer-main">
+
+            <div class="footer-column">
+                <h3>UNIONCORP.</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li>Financial Planning</li>
+                    <li>Investments Management</li>
+                    <li>Business Loan</li>
+                    <li>Taxes Consulting</li>
+                    <li>Insurance Consulting</li>
+                    <li>Retirement Planning</li>
+                    <li>Risk Management</li>
+                    <li>Technology Consulting</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Recent Posts</h3>
+
+                <div class="post">
+                    <p>Incorporation is a big milestone for business <br>
+                        <span>Jan 27, 2021 • Admin</span>
+                    </p>
+                </div>
+
+                <div class="post">
+                    <p>Incorporation is a big milestone for business <br>
+                        <span>Jan 27, 2021 • Admin</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Have a Questions?</h3>
+                <p>📍 203 Fake St. Mountain View, San Francisco, California, USA</p>
+                <p>📞 +2 392 3929 210</p>
+                <p>📧 info@yourdomain.com</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright ©2025 All rights reserved | This template is made with by Colorlib</p>
+        </div>
+
+    </div>
+</footer>
+        
+                
+            
+    </div>
+    
+</body>
+
+</html>

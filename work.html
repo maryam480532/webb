@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>web page</title>
+    </head>
+    <style>
+.case-studies {
+    text-align: center;
+    padding: 20px;
+}
+
+.case-studies h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.case-studies h2 span {
+    font-weight: normal;
+    color: #666;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+    </style>
+    <body>
+    <section class="case-studies">
+        <h2>We Take Every Case <br><span>Studies Very Seriously</span></h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="img/gallery-1.jpg.webp" alt="Team collaboration"></div>
+            <div class="gallery-item"><img src="img/gallery-3.jpg.webp" alt="People working"></div>
+            <div class="gallery-item"><img src="img/gallery-4.jpg.webp" alt="Office scene"></div>
+            <div class="gallery-item"><img src="img/image_7.jpg.webp" alt="Businesswoman"></div>
+            <div class="gallery-item"><img src="img/gallery-7.jpg.webp" alt="Team discussion"></div>
+            <div class="gallery-item"><img src="img/image_3.jpg.webp" alt="Professionals"></div>
+            <div class="gallery-item"><img src="img/gallery-8.jpg.webp" alt="Group photo"></div>
+            <div class="gallery-item"><img src="img/gallery-6.jpg.webp" alt="People in suits"></div>
+        </div>
+    </section>
+</body>
+</html>
